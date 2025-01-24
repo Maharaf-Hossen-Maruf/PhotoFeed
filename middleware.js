@@ -10,7 +10,7 @@ function getLocale(request) {
 
   let headers = {'accept-language' : acceptedLanguage}
   let languages = new Negotiator({headers}).language()
-  console.log(languages);
+//   console.log(languages);
   
   return match(languages,locales,defaultLocale)
 }
